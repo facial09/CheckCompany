@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('https://cdn.pixabay.com/photo/2016/11/29/09/16/architecture-1868667_1280.jpg');
+  background-size : cover;
+  height :100vh;
+}
+</style>
+<title>Checkcompany</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<div class="w3-top w3-bar w3-black">
+<a href="/" class="w3-bar-item w3-button">Home</a>
+<a href="https://datastudio.google.com/reporting/8db76226-0c1b-4233-913a-b019ad9cbaec" class="w3-bar-item w3-button">Company Data</a>
+<a href="/checkcompany" class="w3-bar-item w3-button">Check company</a>
+<a href="/reviews" style="color:gray" class="w3-bar-item w3-button">Enter reviews</a>
+</div>
+
+<div style="position: relative; left: 25%; top: 17%;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 15px;
+  background-color: rgba( 0, 0, 0, 0.5 );
+  width: 50%;
+">
+<div class="w3-card-4">
+  <div style = "color:white">
+    <h2><b>Input your Review</b></h2>
+    <p style="color:skyblue;"><b>(%) 문항 제외, 4.5점이 최고 점수입니다.</b></p>
+  </div>
+  <form class="w3-container" action="/thankyou" style="display:grid;
+  place-items:center;" method="POST">
+    <p>
+    <div class="w3-row-padding">
+  <div class="w3-half"style="color:white">
+    <label><b>Company Name</b></label>
+    <input class="w3-input w3-border" type="text" placeholder="Name"style="border-radius: 12px; " name ="names">
+  </div>
+  <div class="w3-half"style="color:white">
+    <label><b>복지 및 급여</b></label>
+    <input class="w3-input w3-border" type="number" step="0.1" placeholder="4.5"style="border-radius: 12px;" name ="salary">
+  </div>
+  <div class="w3-half"style="color:white">
+    <label><b>Work life Balance</b></label>
+    <input class="w3-input w3-border" type="number" step="0.1" placeholder="4.5"style="border-radius: 12px;" name="wlb">
+  </div>
+  <div class="w3-half"style="color:white">
+    <label><b>사내문화</b></label>
+    <input class="w3-input w3-border" type="number" step="0.1" placeholder="4.5"style="border-radius: 12px;" name ="culture">
+  </div>
+  <div class="w3-half"style="color:white">
+    <label><b>승진기회 및 가능성</b></label>
+    <input class="w3-input w3-border" ttype="number" step="0.1" placeholder="4.5"style="border-radius: 12px;" name="promotion">
+  </div>
+  <div class="w3-half"style="color:white">
+    <label><b>경영진</b></label>
+    <input class="w3-input w3-border" type="number" step="0.1" placeholder="4.5"style="border-radius: 12px;" name="management">
+  </div>
+  <div class="w3-half"style="color:white">
+    <label><b>기업추천율(%)</b></label>
+    <input class="w3-input w3-border" type="number" placeholder="100%"style="border-radius: 12px;" name="recommendrate">
+  </div>
+  <div class="w3-half" style="color:white">
+    <label><b>CEO 지지율(%)</b></label>
+    <input class="w3-input w3-border" type="number" placeholder="100%"style="border-radius: 12px;"  name="ceorating">
+  </div>
+ <div class="w3-half"style="color:white">
+    <label><b>성장가능성(%)</b></label>
+    <input class="w3-input w3-border" type="number" placeholder="100%"style="border-radius: 12px;" name="growth">
+  </div>
+  <div class="w3-half"style="color:white">
+    <label><b>총점</b></label>
+    <input class="w3-input w3-border" type="number" step="0.1" placeholder="4.5"style="border-radius: 12px;" name="total">
+    <br>
+  </div>
+  <p><br>
+  <button class="w3-btn w3-blue" style="border-radius: 5px; display:grid;
+  place-items:center;" type="submit">Submit</button></p>
+  </div>
+  </form>
+
+</div>
+</div>
+
+
+
+</body>
+</html> 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('https://cdn.pixabay.com/photo/2016/11/29/09/16/architecture-1868667_1280.jpg');
+  background-size : cover;
+  height :100vh;
+}
+</style>
+<title>Checkcompany</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<div class="w3-top w3-bar w3-black">
+<a href="/" class="w3-bar-item w3-button">Home</a>
+<a href="https://datastudio.google.com/reporting/8db76226-0c1b-4233-913a-b019ad9cbaec" class="w3-bar-item w3-button">Company Data</a>
+<a href="/checkcompany" style = "color : gray" class="w3-bar-item w3-button">Check company</a>
+<a href="/reviews" class="w3-bar-item w3-button">Enter reviews</a>
+</div>
+
+<div style="position: relative; left: 25%; top: 17%;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 5px;
+  background-color:black;
+  background-color: rgba( 0, 0, 0, 0.5 );
+  width: 50%;">
+<form action="/predict" method="POST">
+<div style="border-radius: 12px; display:grid;
+  place-items:center;">
+  <h2 class="w3-text-white"><b>Please, Enter the satisfaction with your company</b></h2>
+  
+  <p style="color : skyblue"><b>Use only number between 1 to 4.5.</b></p>
+<div style="display:grid;
+  place-items:center;">
+  <p>      
+  <label class="w3-text-white"><b>복지 및 급여</b></label>
+  <input class="w3-input w3-border" style="width: 100%;border-radius: 12px; " name="salary" type="number" step="0.1"></p>
+  
+  <p>      
+  <label class="w3-text-white"><b>Work Life Balance</b></label>
+  <input class="w3-input w3-border" style="width: 100%;border-radius: 12px;" name="wlb" type="number" step="0.1"></p>
+  <p> 
+  <label class="w3-text-white"><b>사내문화</b></label>
+  <input class="w3-input w3-border" style="width: 100%;border-radius: 12px;" name="culture" type="number" step="0.1"></p>
+  <p>      
+  <label class="w3-text-white"><b>승진기회 및 가능성</b></label>
+  <input class="w3-input w3-border" style="width: 100%;border-radius: 12px;" name="promotion" type="number" step="0.1"></p>
+  <p>      
+  <label class="w3-text-white"><b>경영진</b></label>
+  <input class="w3-input w3-border" style="width: 100%;border-radius: 12px;" name="management" type="number" step="0.1"></p>
+  </div>
+  <p>
+  <button class="w3-btn w3-blue" style="border-radius: 12px; display:grid;
+  place-items:center;" type="submit">Check total score</button></p>
+</form>
+</div>
+
+</body>
+</html> 
